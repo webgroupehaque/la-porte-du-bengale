@@ -9,37 +9,37 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "Le Tigre du Bengale - Restaurant Indien à Nancy | Commande en Ligne",
-  description = "Restaurant indien authentique à Nancy. Commandez en ligne vos plats préférés : tandoori, curry, biryani, naan. Livraison rapide à Nancy et alentours. Cuisine indienne traditionnelle et savoureuse.",
-  keywords = "restaurant indien nancy, cuisine indienne nancy, tandoori nancy, curry nancy, biryani nancy, livraison indien nancy, commande en ligne restaurant indien, naan nancy, tikka masala nancy, restaurant asiatique nancy",
-  image = "https://tigre-du-bengale.netlify.app/og-image.jpg",
-  url = "https://tigre-du-bengale.netlify.app"
+  title = "La Porte du Bengale - Restaurant Indien à Épinal | Commande en Ligne",
+  description = "Restaurant indien authentique à Épinal. Commandez en ligne vos plats préférés : tandoori, curry, biryani, naan. Livraison rapide à Épinal et alentours.",
+  keywords = "restaurant indien épinal, cuisine indienne épinal, tandoori épinal, curry épinal, biryani épinal, livraison indien épinal",
+  image = "https://la-porte-du-bengale.netlify.app/og-image.jpg",
+  url = "https://la-porte-du-bengale.netlify.app"
 }: SEOProps) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    "name": "Le Tigre du Bengale",
+    "name": "La Porte du Bengale",
     "image": image,
     "description": description,
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "19 Rue des Maréchaux",
-      "addressLocality": "Nancy",
+      "streetAddress": "9 rue de Nancy",
+      "addressLocality": "Épinal",
       "addressRegion": "Grand Est",
-      "postalCode": "54000",
+      "postalCode": "88000",
       "addressCountry": "FR"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "48.6921",
-      "longitude": "6.1844"
+      "latitude": "48.1747",
+      "longitude": "6.4497"
     },
     "url": url,
-    "telephone": "+33383228831",
+    "telephone": "+33329641651",
     "servesCuisine": "Indienne",
     "priceRange": "€€",
     "acceptsReservations": true,
-    "menu": `${url}/order`,
+    "menu": `${url}/commander`,
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -81,7 +81,7 @@ export default function SEO({
       <meta name="robots" content="index, follow" />
       <meta name="language" content="French" />
       <meta name="revisit-after" content="7 days" />
-      <meta name="author" content="Le Tigre du Bengale" />
+      <meta name="author" content="La Porte du Bengale" />
       <link rel="canonical" href={url} />
       
       {/* Structured Data (JSON-LD) */}

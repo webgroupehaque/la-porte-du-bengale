@@ -163,8 +163,8 @@ export const handler = async (event: any) => {
       payment_method_types: ['card'],
       line_items: lineItems,
       mode: 'payment',
-      success_url: `${event.headers.origin || 'https://tigre-du-bengale.netlify.app'}/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${event.headers.origin || 'https://tigre-du-bengale.netlify.app'}/?canceled=true`,
+      success_url: `${event.headers.origin || 'https://la-porte-du-bengale.netlify.app'}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${event.headers.origin || 'https://la-porte-du-bengale.netlify.app'}/?canceled=true`,
       customer_email: customerInfo.email,
       metadata: {
         restaurantId,

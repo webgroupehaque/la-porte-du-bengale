@@ -98,7 +98,7 @@ function App() {
           cartItems: cart,
           customerInfo,
           totalAmount,
-          restaurantId: 'tigre-bengale',
+          restaurantId: 'porte-bengale',
           orderType: submittedOrderType,
         }),
       });
@@ -174,8 +174,8 @@ function App() {
         {/* Simple Footer */}
         <footer className="bg-black py-8 border-t border-gray-900 mt-auto">
           <div className="container mx-auto px-6 text-center">
-            <h2 className="text-xl font-serif text-bengal-gold mb-2">Le Tigre du Bengale</h2>
-            <p className="text-gray-600 text-sm">© 2024 - 19 Rue des Maréchaux, Nancy</p>
+            <h2 className="text-xl font-serif text-bengal-gold mb-2">La Porte du Bengale</h2>
+            <p className="text-gray-600 text-sm">© 2024 - 9 rue de Nancy, 88000 Épinal</p>
           </div>
         </footer>
       </div>

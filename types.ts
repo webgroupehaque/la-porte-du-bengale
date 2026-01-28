@@ -24,9 +24,11 @@ export type OrderType = 'delivery' | 'pickup';
 export type PageView = 'home' | 'order' | 'contact' | 'success';
 
 export interface RestaurantInfo {
+  id: string;
   name: string;
   address: string;
   phone: string;
+  email: string;
   hours: {
     lunch: string;
     dinner: string;

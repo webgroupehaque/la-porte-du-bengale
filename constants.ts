@@ -1,12 +1,14 @@
 import { RestaurantInfo, MenuItem } from './types';
 
 export const RESTAURANT_DATA: RestaurantInfo = {
-  name: "Le Tigre du Bengale",
-  address: "19 Rue des Maréchaux, 54000 Nancy",
-  phone: "03 83 22 88 31",
+  id: 'porte-bengale',
+  name: 'La Porte du Bengale',
+  address: '9 rue de Nancy, 88000 Épinal',
+  phone: '03 29 64 16 51',
+  email: 'laportedubengale1@gmail.com',
   hours: {
-    lunch: "12:00 - 14:00",
-    dinner: "18:30 - 23:30"
+    lunch: '11h30 - 14h',
+    dinner: '18h30 - 23h'
   }
 };
 

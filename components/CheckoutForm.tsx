@@ -249,7 +249,7 @@ export const CheckoutForm: React.FC<CheckoutFormProps> = ({
                     className={`w-full px-4 py-2 bg-bengal-dark/50 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-bengal-gold focus:ring-2 focus:ring-bengal-gold/50 transition-colors resize-none ${
                       errors.address ? 'border-red-500/50' : 'border-orange-900/20'
                     }`}
-                    placeholder="123 Rue de la République, 54000 Nancy"
+                    placeholder="9 rue de Nancy, 88000 Épinal"
                   />
                   {errors.address && <p className="text-red-500 text-sm mt-1">{errors.address}</p>}
                 </div>

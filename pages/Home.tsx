@@ -19,7 +19,7 @@ const Home: React.FC<HomeProps> = ({ setPage }) => {
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=2070&auto=format&fit=crop" 
-            alt="Restaurant indien Le Tigre du Bengale" 
+            alt="Restaurant indien La Porte du Bengale" 
             className="w-full h-full object-cover scale-105 animate-pulse-slow"
           />
           {/* Warm Gradient Overlay */}
@@ -33,14 +33,14 @@ const Home: React.FC<HomeProps> = ({ setPage }) => {
             Restaurant Indien Semi-Gastronomique
           </span>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-9xl text-white mb-6 leading-tight animate-fade-in-up drop-shadow-xl">
-            Restaurant Indien à Nancy
+            Restaurant Indien à Épinal
             <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-bengal-gold via-orange-400 to-bengal-spice">
-              Le Tigre du Bengale
+              La Porte du Bengale
             </span>
           </h1>
           <p className="text-bengal-cream text-lg md:text-2xl font-light mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-100 drop-shadow-md">
-            Cuisine indienne authentique • Commande en ligne • Livraison rapide à Nancy
+            Cuisine indienne authentique • Commande en ligne • Livraison rapide à Épinal
             <br/><span className="italic text-bengal-gold">Une cuisine riche, chaleureuse et authentique.</span>
           </p>
           
@@ -98,13 +98,13 @@ const Home: React.FC<HomeProps> = ({ setPage }) => {
       <section className="py-16 px-4 bg-bengal-dark">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-8 text-white">
-            Votre Restaurant Indien de Confiance à Nancy
+            Votre Restaurant Indien de Confiance à Épinal
           </h2>
           <p className="text-lg md:text-xl text-gray-300 text-center leading-relaxed">
-            Découvrez les saveurs authentiques de l'Inde au cœur de Nancy. 
-            Le Tigre du Bengale vous propose une cuisine indienne traditionnelle : 
+            Découvrez les saveurs authentiques de l'Inde au cœur d'Épinal. 
+            La Porte du Bengale vous propose une cuisine indienne traditionnelle : 
             tandoori, curry, biryani, naan fraîchement préparés. 
-            Commandez en ligne et profitez d'une livraison rapide dans tout Nancy.
+            Commandez en ligne et profitez d'une livraison rapide dans tout Épinal.
           </p>
         </div>
       </section>

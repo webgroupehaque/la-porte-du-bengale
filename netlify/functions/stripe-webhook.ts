@@ -185,8 +185,8 @@ export const handler = async (event: any) => {
         }).join('\n');
 
         const mailOptions = {
-          from: `"Le Tigre du Bengale" <${process.env.GMAIL_USER}>`,
-          to: process.env.RESTAURANT_EMAIL || 'le.tigre.du.bengale1@gmail.com',
+          from: `"La Porte du Bengale" <${process.env.GMAIL_USER}>`,
+          to: process.env.RESTAURANT_EMAIL || 'laportedubengale1@gmail.com',
           subject: `🔔 Nouvelle commande #${orderCode} - ${metadata.customerName}`,
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -260,14 +260,14 @@ export const handler = async (event: any) => {
         }).join('');
 
         const clientMailOptions = {
-          from: `"Le Tigre du Bengale" <${process.env.GMAIL_USER}>`,
+          from: `"La Porte du Bengale" <${process.env.GMAIL_USER}>`,
           to: session.customer_email!,
-          subject: `✅ Confirmation de votre commande #${orderCode} - Le Tigre du Bengale`,
+          subject: `✅ Confirmation de votre commande #${orderCode} - La Porte du Bengale`,
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff;">
               <div style="background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%); padding: 30px; text-align: center;">
-                <h1 style="color: #ffffff; margin: 0; font-size: 28px;">🍛 Le Tigre du Bengale</h1>
-                <p style="color: #fed7aa; margin: 10px 0 0 0; font-size: 14px;">Restaurant Indien - Nancy</p>
+                <h1 style="color: #ffffff; margin: 0; font-size: 28px;">🍛 La Porte du Bengale</h1>
+                <p style="color: #fed7aa; margin: 10px 0 0 0; font-size: 14px;">Restaurant Indien - Épinal</p>
               </div>
 
               <div style="padding: 30px;">
@@ -334,20 +334,20 @@ export const handler = async (event: any) => {
                 ` : `
                 <div style="background: #f9fafb; padding: 20px; border-radius: 8px; margin: 20px 0;">
                   <h4 style="margin: 0 0 10px 0; color: #1f2937;">📍 Adresse du restaurant</h4>
-                  <p style="margin: 0; color: #4b5563;">19 Rue des Maréchaux<br/>54000 Nancy</p>
+                  <p style="margin: 0; color: #4b5563;">9 rue de Nancy<br/>88000 Épinal</p>
                 </div>
                 `}
 
                 <div style="background: #eff6ff; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #3b82f6;">
                   <p style="margin: 0; color: #1e40af; font-size: 14px;">
                     <strong>📞 Besoin d'aide ?</strong><br/>
-                    Contactez-nous au 03 83 22 88 31 ou répondez directement à cet email.
+                    Contactez-nous au 03 29 64 16 51 ou répondez directement à cet email.
                   </p>
                 </div>
 
                 <p style="text-align: center; color: #9ca3af; font-size: 12px; margin-top: 40px;">
                   Merci de votre confiance !<br/>
-                  L'équipe du Tigre du Bengale
+                  L'équipe de La Porte du Bengale
                 </p>
               </div>
             </div>

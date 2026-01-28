@@ -4,15 +4,16 @@ import { MapPin, Phone, Clock } from 'lucide-react';
 import SEO from '../components/SEO';
 
 const Contact: React.FC = () => {
-  const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(RESTAURANT_DATA.address + ", France")}&output=embed`;
+  const mapSrc =
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2671.234!2d6.4497!3d48.1747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDEwJzI5LjAiTiA2wrAyNic1OS4wIkU!5e0!3m2!1sfr!2sfr!4v1234567890";
 
   return (
     <>
       <SEO 
-        title="Contact - Le Tigre du Bengale Nancy | Réservation Restaurant Indien"
-        description="Contactez le restaurant indien Le Tigre du Bengale à Nancy. Téléphone, adresse, horaires. Réservation en ligne disponible."
-        keywords="contact restaurant indien nancy, horaires restaurant indien nancy, adresse restaurant indien nancy"
-        url="https://tigre-du-bengale.netlify.app/contact"
+        title="Contact - La Porte du Bengale Épinal | Réservation Restaurant Indien"
+        description="Contactez le restaurant indien La Porte du Bengale à Épinal. Téléphone, adresse, horaires. Réservation en ligne disponible."
+        keywords="contact restaurant indien épinal, horaires restaurant indien épinal"
+        url="https://la-porte-du-bengale.netlify.app/contact"
       />
       <div className="min-h-screen pt-24 pb-12 bg-bengal-dark">
       <div className="container mx-auto px-4 md:px-8">
@@ -36,7 +37,7 @@ const Contact: React.FC = () => {
                 <p className="text-bengal-cream leading-relaxed text-lg">
                   {RESTAURANT_DATA.address}
                 </p>
-                <p className="text-gray-500 mt-2 text-sm italic">Facile d'accès au centre de Nancy</p>
+                <p className="text-gray-500 mt-2 text-sm italic">Facile d'accès au centre d'Épinal</p>
               </div>
             </div>
 
@@ -89,7 +90,7 @@ const Contact: React.FC = () => {
               allowFullScreen 
               referrerPolicy="no-referrer-when-downgrade" 
               src={mapSrc}
-              title="Le Tigre du Bengale Map"
+              title="La Porte du Bengale Map"
               className="group-hover:grayscale-0 transition-all duration-500"
             ></iframe>
           </div>
