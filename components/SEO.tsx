@@ -9,7 +9,7 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "La Porte du Bengale - Restaurant Indien à Épinal | Commande en Ligne",
+  title = "La Porte du Bengale",
   description = "Restaurant indien authentique à Épinal. Commandez en ligne vos plats préférés : tandoori, curry, biryani, naan. Livraison rapide à Épinal et alentours.",
   keywords = "restaurant indien épinal, cuisine indienne épinal, tandoori épinal, curry épinal, biryani épinal, livraison indien épinal",
   image = "https://la-porte-du-bengale.netlify.app/og-image.jpg",
