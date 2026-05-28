@@ -83,16 +83,21 @@ export const handler = async (event: any) => {
       const orderCode = Math.floor(1000 + Math.random() * 9000).toString();
       console.log('Generated order code:', orderCode);
 
+      const deliveryFee = (metadata.orderType || 'delivery') === 'delivery' ? 2.50 : 0;
+      const totalAmount = (session.amount_total! / 100);
+      const subtotal = totalAmount - deliveryFee;
+
       const orderToInsert: any = {
         restaurant_id: metadata.restaurantId,
         customer_name: metadata.customerName,
         customer_email: session.customer_email,
         customer_phone: metadata.customerPhone,
-        customer_address: metadata.customerAddress,
+        delivery_address: metadata.customerAddress,
         items: orderData,
-        total_amount: (session.amount_total! / 100).toFixed(2),
-        status: 'paid',
-        stripe_payment_id: session.payment_intent as string,
+        subtotal: subtotal.toFixed(2),
+        delivery_fee: deliveryFee.toFixed(2),
+        total_amount: totalAmount.toFixed(2),
+        payment_status: 'paid',
         order_type: metadata.orderType || 'delivery',
         order_code: orderCode, // Code à 4 chiffres
       };
